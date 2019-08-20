@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    th action specifies the url to pass the form to-->
+    <form action ="#" th:action="@{/userform}" th:object="${user}" method="post">
+        First Name: <input type="text" th:field="*{firstname}" /> <br />
+        Last Name: <input type="text" th:field="*{lastname}" /> <br />
+        SSN: <input th:field="*{ssn}" type="text"/> <br />
+        DOB: <input type="text" th:field="*{dob}" /> <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

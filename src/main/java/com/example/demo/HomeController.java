@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class HomeController {
-    @GetMapping("/songform")
+    @GetMapping("/userform")
     public String loadFormPage(Model model) {
-        model.addAttribute("song", new Song());
-        return "songform";
+        model.addAttribute("user", new User());
+        return "userform";
     }
-    @PostMapping("/songform")
-    public String loadFromPage(@ModelAttribute Song song, Model model){
-        model.addAttribute("song", song);
-        return "confirmsong";
+    @PostMapping("/userform")
+    public String loadFromPage(@ModelAttribute User user, Model model){
+        model.addAttribute("user", user);
+        return "confirmuser";
         }
     }
 

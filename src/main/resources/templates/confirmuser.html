@@ -6,12 +6,11 @@
 </head>
 <body>
 <!-- th:inline indicates the value of the text that should be displayed within the <p> tag-->
-<!--[[${song.name}]] calls the model.addAttribute value from the HomeController-->
+
     <p th:inline="text">
-    The song name was [[${song.name}]]. <br />
-    The artist name was [[${song.artist}]]. <br />
-    The album name was [[${song.album}]]. <br />
-    The rating name was [[${song.rating}]]. <br />
+    The employee name was [[${user.firstname}]] [[${user.lastname}]]. <br />
+    The employee's SSN was [[${user.ssn}]]. <br />
+    The employee's DOB was [[${user.dob}]]. <br />
     </p>
 </body>
 </html>
